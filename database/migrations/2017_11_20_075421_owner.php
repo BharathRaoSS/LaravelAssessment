@@ -20,7 +20,9 @@ class Owner extends Migration
         $table->string('password');
         $table->string('address');
         $table->string('phone_no');
+        $table->string('image_url');
         $table->timestamps();
+        });
     }
 
     /**
@@ -30,6 +32,6 @@ class Owner extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('materials');
+        Schema::dropIfExists('owner');
     }
 }
